@@ -30,7 +30,7 @@ body {
 /* font-family: 'Fira Sans', sans-serif; */
 
 
-
+/* -------HEADER------- */
 
 .header {
 	background: #332208;
@@ -74,4 +74,168 @@ body {
 
 	font-size: 18px;
 	line-height: 21px;
+}
+
+/* -------section top------- */
+
+.top {
+}
+
+.top__heading {
+	display: flex;
+	padding-top: 52px;
+	padding-bottom: 30px;
+}
+.top__content {
+	text-align: center;
+
+	padding-top: 91px;
+
+	width: 50%;
+}
+
+.top__title {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 58px;
+
+	margin: 0 auto 20px;
+
+	max-width: 454px;
+}
+
+.top__text {
+	font-size: 24px;
+	line-height: 28px;
+
+	margin: 0 auto 63px;
+
+	max-width: 470px;
+}
+
+.application-btn {
+	background: #C5AC2D;
+	color: #FEFEFE;
+	font-size: 16px;
+	line-height: 19px;
+
+	padding: 16px 19px 15px 18px;
+
+	text-transform: uppercase;
+
+	transition: all .5s;
+	border: 1px solid transparent;
+}
+
+.application-btn:hover {
+	color: #C5AC2D;
+	background: #FEFEFE;
+	border: 1px solid #C5AC2D;
+}
+
+.top__slider {
+	width: 50%;
+}
+
+.top__slider .slick-dots {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.slick-dots {
+	list-style: none;
+
+	text-align: center;
+}
+
+.slick-dots button {
+	font-size: 0;
+	width: 8px;
+	height: 8px;
+
+	background-color: #332208;
+
+	border: none;
+	border-radius: 50%;
+	padding: 0;
+}
+
+.slick-active button{
+	width: 16px;
+	height: 16px;
+}
+.top__slider-item {
+}
+.top__slider-images {
+}
+
+.top__slider-text {
+	padding-right: 100px;
+	text-align: right;
+
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.top__slider-text span + span{
+	padding-left: 12px;
+}
+
+.top__bottom {
+	display: flex;
+
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.top__items {
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+}
+
+.top__item {
+	border: 1px solid #1B1818;
+	padding: 10px;
+
+	width: 150px;
+	height: 150px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+	cursor: pointer;
+
+	transition: all .5s;
+}
+
+.top__item:hover {
+	transform: scale(1.25);
+}
+
+.top__item-img {
+
+}
+
+.top__item-text {
+
+}
+
+.top__links {
+	padding-right: 80px;
+}
+
+.top__link {
+	color: #1B1818;
+	border-bottom: 1px solid #1B1818;
+}
+
+.top__link + .top__link {
+		margin-left: 20px;
 }
