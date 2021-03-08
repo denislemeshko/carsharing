@@ -5,6 +5,14 @@ $(function(){
 		dots: true,
 		autoplay: true,
 		fade: true,
+		responsive: [
+			{
+				breakpoint: 1340,
+				settings: {
+				dots: false
+				}
+			},
+			]
 	});
 
 
@@ -16,6 +24,9 @@ $(function(){
 
 	});
 
+		$('.menu__btn').on('click', function(){
+			$('.menu__list').toggleClass('menu__list--active');
+		});
 
 
 });
