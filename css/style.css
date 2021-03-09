@@ -50,6 +50,7 @@ body {
 
 .menu__list {
 	display: flex;
+	
 }
 
 .menu__item {
@@ -594,6 +595,8 @@ body {
 }
 
 /* -------  Adoptive ------- */
+
+
 @media(max-width: 1240px) {
 	.top__heading {
 		display: block;
@@ -601,7 +604,7 @@ body {
 
 	.top__content {
 		width: 100%;
-		padding-top: 30px;
+		padding-top: 0;
 	}
 
 	.top__slider {
@@ -619,6 +622,42 @@ body {
 
 	.top__items {
 		width: 100%;
+	}
+
+	.benefits__images {
+		width: 40%;
+	}
+}
+
+@media(max-width: 1140px) {
+	.rent__inner {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.rent__content {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 1040px) {
+	.benefits__items {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.benefits__content {
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.benefits__text + .benefits__text {
+		width: 100%;
+	}
+
+	.footer .menu {
+		display: none;
 	}
 }
 
@@ -671,6 +710,47 @@ body {
 		left: 0;
 		top: 9px;
 	}
+
+	.rent__item {
+		margin: 30px;
+	}
+
+	.feedback__images {
+		display: none;
+	}
+
+	.footer,
+	.feedback,
+	.reviews,
+	.benefits,
+	.rent,
+	.top {
+	padding: 30px 0;
+}
+
+@media(max-width: 650px) {
+	.rent__item {
+		width: 100%;
+		min-height: 245px;
+	}
+
+	.rent__item-title {
+		margin-bottom: 20px;
+	}
+
+	.rent__content,
+	.benefits__title,
+	.benefits__content,
+	.reviews__title,
+	.feedback__title {
+		text-align: center;
+	}
+
+	.feedback__btn {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media(max-width: 545px) {
@@ -685,7 +765,41 @@ body {
 	.top__slider-text {
 		padding-right: 0;
 	}
+
+	.benefits__images {
+		width: 70%;
+	}
+
+	.benefits__list-item {
+		margin-right: 0;
+		text-align: left;
+		padding-right: 0;
+		padding-left: 26px;
+	}
+
+
+	.benefits__list-item::after {
+		right: auto;
+		left: 0;
+	}
+
+	.benefits__list {
+		width: 100%;
+	}
 }
+
+@media(max-width: 450px){
+	.footer__top {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer .phone {
+		margin-top: 30px;
+		display: inline-block;
+	}
+}
+
 
 @media(max-width: 410px) {
 
@@ -719,7 +833,8 @@ body {
 		margin: 10px 0;
 	}
 
+	.rent__item {
+		margin: 30px 0;
 	}
-
-
-
+}
+	}
